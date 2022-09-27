@@ -5,51 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stopwatch Countdown</title>
-    <style>
-#test{
-  display: flex;
-  width: 300px;
-  height: 300px;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
-  margin-left:500px;
-  border-radius: 50%;
-  color: rgb(112, 165, 42);
-  border-top: 10px solid red;
-  border-bottom: 10px solid rgb(238, 255, 0);
-  border-left: 10px solid rgb(0, 162, 255);
-  border-right: 10px solid rgb(255, 0, 255);
-}
-input{
-  width: 30%;
-  height: 50px;
-  outline: none;
-  
-}
-#butt{
-  width: 15%;
-  height: 50px;
-  margin-left: 550px;
-  border-radius: 5px;
-  border: 5px solid green;
-}
-.taketime{
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-h1{
-  color: darkslategrey;
-  text-align: center;
-}
-
-body{
-  background-color: rgba(0, 0, 0, 0.886);
-}
-
-    </style>
+    <link rel="stylesheet" href="Assets/index.css">
 </head>
 <body>
     <h1>Westempire Stopwatch</h1>
@@ -79,77 +35,7 @@ body{
     <br><br><br>
 
     
-  
-
-    <script>
-
-function checking(){
-  var timer=document.getElementById("test");
-      var hours= document.getElementById("hours").value;
-      var min = document.getElementById("min").value;
-      var sec = document.getElementById("sec").value;
-      
-      
-    
-     
-      function time(){
-        if(sec==0){
-            if(min==0){
-              if(hours==0){
-                min= 0;
-                hours= 0;
-                sec= 0;
-              }
-              else if(hours>0){
-                hours-=1;
-                min=60;
-                sec=60;
-                sec-=1
-              }
-              if(hours<10){
-                hours="0" + hours;
-              }
-             
-            }
-          else if(min>0){
-            min-=1;
-            sec=60;
-            sec-=1;
-          }
-          if(min<10){
-            min="0" + min;
-          }  
-        }
-        else if(sec>0){
-          sec-=1;
-        }
-
-
-
-
-        if(sec<10){
-          sec="0" + sec
-        }
-
-
-         
-        
-      var ok =hours +":" + min + ":" + sec;
-      timer.innerHTML=ok;
-      document.getElementById("hours").value=""
-      document.getElementById("min").value=""
-      document.getElementById("sec").value=""
-
-      
-      }
-
-
-
-      setInterval(time,1000)
-}
-
-     
-  </script>
+<script src="Assets/index.js"></script>
 
 
 

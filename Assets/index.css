@@ -1,0 +1,40 @@
+#test{
+    display: flex;
+    width: 23%;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    margin-left:38.5%;
+    border-radius: 50%;
+    color: rgb(112, 165, 42);
+    box-shadow: inset 3px 3px 6px #b8b9be, inset -3px -3px 6px #fff ;
+    box-shadow: 3px 3px 6px #b8b9be, -3px -3px 6px #fff ;
+  }
+  input{
+    width: 30%;
+    height: 50px;
+    outline: none;
+    
+  }
+  #butt{
+    width: 15%;
+    height: 50px;
+    margin-left: 42.5%;
+    border-radius: 5px;
+    border: 5px solid green;
+  }
+  .taketime{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  h1{
+    color: darkslategrey;
+    text-align: center;
+  }
+  
+  body{
+    background-color: #E6E7EE;
+  }
